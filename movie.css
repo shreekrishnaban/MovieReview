@@ -1,0 +1,159 @@
+body {
+    background-image: url("images/background.png");
+    font-family: Verdana, Tahoma, 'sans-serif';
+    margin: 0pt;
+    padding: 0pt;
+    font-size: 8pt;
+}
+
+.banner {
+    background-image: url("images/bannerbg.png");
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+    height: 50px;
+}
+
+.banner-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 50px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24pt;
+    font-weight: bold;
+    font-family: Tahoma, Verdana, 'sans-serif';
+    text-shadow: 3px 3px #999999;
+}
+
+
+/* Below the main heading is the page's overall content area, with an overall 33% rating for the film, several critics'
+reviews, and an overview of the film at right. Taken together this content occupies 800px in width and is centered
+horizontally within the page. If the page resizes horizontally, this 800px section should move dynamically so that it
+remains centered horizontally on the page. This overall section has a 4px gray solid border with a 20px round radius
+and should be sized large enough to contain all of its contents. (Hint: See textbook section 4.3 on making contents fit.) */
+
+.movie-overview {
+    width: 800px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid gray;
+    border-radius: 20px;
+    overflow: auto;
+}
+
+
+/* In the overall area there is a 550px-wide left section for the "rotten" 33% rating and the critics' reviews of the film.
+The section is topped by a smaller section containing a large "rotten" image (rottenbig.png), vertically aligned to be
+even with the bottom of the text around it. Behind this the image rbg.png repeats horizontally across the entire
+length of the section. Each of these images is 83px tall. This is followed by the 33% overall rating for the film,
+which is shown in a 48pt red bold font.
+Below the 33% overall rating, there are two columns of reviews. The columns each occupy 47% of the width of
+the overall left-center section of the page. There is a horizontal spacing of 2% between the columns and
+neighboring content. (Hint: See textbook section 4.3.4 on multi-column layouts, but avoid the new column-* CSS3 properties.) */
+
+.rating-critics {
+    width: 550px;
+}
+
+.rating-text {
+    font-size: 48pt;
+    font-weight: bold;
+    color: red;
+}
+
+.general-overview {
+    float: right;
+    width: 250px;
+}
+
+.rating-header {
+    background-image: url("images/rbg.png");
+    background-repeat: repeat-x;
+    height: 83px;
+    display: flex;
+}
+
+.column {
+    float: right;
+    width: 47%;
+    padding-right: 2%;
+    min-height: 140px;
+    margin-bottom: 20pt;
+}
+
+.overview-image {
+    border-radius: 0px 16px 0px 0px;
+}
+
+.round-top-left {
+    border-radius: 16px 0px 0px 0px;
+}
+
+.review {
+    background-color: #E8DC9B;
+    border: 2px solid gray;
+    border-radius: 10px;
+    min-height: 35px;
+    text-align: left;
+    padding: 5px;
+}
+
+.review-quote {
+    padding-right: 8px;
+    font-weight: bold;
+}
+
+.reviewed-icon {
+    float: left;
+    padding-right: 5px;
+}
+
+.reviewer {
+    text-align: left;
+}
+
+.reviewer img {
+    float: left;
+    padding-right: 5px;
+}
+
+.overview-description {
+    width: 250px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    text-align: left;
+}
+
+dl>dt {
+    font-weight: bold;
+}
+
+dl>dd {
+    margin-bottom: 10pt;
+}
+
+.green-background {
+    background-color: #A2B964;
+}
+
+.clear-both {
+    clear: both;
+}
+
+.pagination {
+    margin: auto;
+    padding-bottom: 5px;
+}
+
+.validators {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    opacity: 0.5;
+}
